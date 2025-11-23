@@ -1,0 +1,217 @@
+/* ADD YOUR CUSTOM CSS TO THIS FILE BELOW */
+
+body {background-color: #2d466f;
+	  font-family: "TASA Orbiter", sans-serif;
+	  color: white;
+     }
+
+h1, h2 {font-family: "Radley", "Times New Roman", serif;
+	    text-shadow: 2px 2px 4px rgba(0,0,0,0.4),
+                     4px 4px 8px rgba(0,0,0,0.2);
+	    margin-top: -8px;
+       }
+
+h1 {font-size: clamp(1.5rem, 4vw, 4vw);}
+
+h2 {font-size: clamp(1.5rem, 2.5vw, 2.5vw);}
+
+.navbar {padding-top: 20px;
+         padding-bottom: 20px;
+        }
+
+.navbar-dark {--bs-navbar-hover-color: #eacdc3 !important;}
+
+.dropdown-toggle .nav-link.active, .navbar-nav .nav-link.show {color: #eacdc3 !important;}
+
+.offcanvas .btn-close {filter: invert(1);}
+
+.bg-dark {background-color: #2d466f !important;}
+
+
+/*center logo*/
+.center-logo {
+  height: clamp(7rem, 8.75vw, 8.75vw);
+  width: auto;
+  transform: translateY(14%);
+			 }
+.navbar-brand {z-index: 10;}
+
+
+.offcanvas {background-color: #233959;}
+
+.hero {
+  background-image: url(filteredbannerbackground2.jpg);
+  width: 100%;
+  height: 46vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+      }
+
+.hero-btn {font-size: clamp(12px, 1vw, 1vw);}
+
+.hero .btn, #collections-preview .btn {padding:4px;}
+
+.hero .btn:hover {box-shadow: 0 5px 10px rgba(0,0,0,0.3);}
+
+.custom-border {
+	border: 2px solid white;
+	margin: 18px;
+			   }
+
+.gradient-bg {background: linear-gradient(to top, #233959, #23395900);}
+
+#collections-preview {padding-top: 2rem;}
+
+
+#collections-preview .container, #about {
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
+										}
+
+#collections-preview .btn, .hero-btn {
+	border-radius: 0;
+	border-width: 2px;
+                         			 }
+
+
+.big-icon {font-size: 2.5vw;}
+
+.tab-left-col {padding-right: 1.5vw;}
+
+.tab-right-col {padding-left: 1.5vw;}
+
+.tab-right-btm-img {margin-top: 1vw; }
+
+
+@media (max-width: 767.98px) {
+    .tab-left-col {margin-bottom: 2rem;}
+	.tab-right-col {gap: 1.5rem;}
+	.tab-left-col, .tab-right-col {
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center;
+    							  }
+							 }
+
+
+
+
+/*offset outline*/
+.offset-outline {
+    position: relative;
+    display: inline-block;
+                }
+
+.offset-outline img {
+    position: relative;
+    z-index: 2;
+                    }
+
+.offset-outline::after {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: -14px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    z-index: 1;
+                       }
+
+.img-border{border: 6px solid #dbcdb2;
+  transition: box-shadow 0.3s ease;}
+
+
+/*hover and text*/
+.img-hover-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+  z-index: 3;
+				   }
+
+.img-hover-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 1.3rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.65), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; 
+  z-index: 4; 
+                 }
+
+.img-hover-wrapper:hover .img-hover-text {opacity: 1;}
+
+.img-hover-wrapper a {
+  display: block;
+                     }
+
+.img-border:hover{border: 6px solid #dbcdb2;
+	 box-shadow: 0 10px 10px rgba(0,0,0,0.45);
+	 content: "";
+     z-index: 5; 
+                 }
+
+
+.bg-secondary{background-color: #233959 !important;}
+
+#about img {
+	height: 18rem;
+    margin-right: 13vw;
+		   }
+
+/* large screens */
+@media (min-width: 768px) {
+  #about-text {
+    margin-left: -6vw;
+    padding-right: 8vw;
+  }
+}
+
+/* stacked layout */
+@media (max-width: 767px) {
+  #about {text-align: center;}
+
+  #about img {
+    margin: 0 auto;
+    display: block;
+  			 }
+						  }
+
+.accordion {
+	--bs-accordion-bg: #2d466f;
+	--bs-accordion-btn-bg: #2d466f;
+	--bs-accordion-border-color: rgba(0,0,0,0);
+	--bs-accordion-color: white;
+	--bs-accordion-btn-color: white;
+    --bs-accordion-active-color: black;
+    --bs-accordion-active-bg: white;
+}
+
+.accordion-button::after {
+  filter: brightness(100);
+  opacity: 1;
+						 }
+
+.accordion-button:not(.collapsed)::after {filter: brightness(0);}
+
+.accordion-item, .accordion-button, .accordion-button:not(.collapsed), .accordion-body {
+  border: none !important;
+  box-shadow: none !important;
+																					   }
+
+footer p{
+	margin: 0;
+	font-size: 12px;}

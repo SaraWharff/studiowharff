@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="YOUR DESCRIPTION HERE">
+    <meta name="author" content="YOUR NAME HERE">
+    <title>Starter Template · Bootstrap v5.3.7</title>
+
+   <!-- Bootstrap v5.3.7 -->
+   <!-- LOAD BOOTSTRAP CSS - DO NOT DELETE -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">        
+   <!-- END LOADING BOOTSTRAP CSS -->
+    
+   <!-- Custom styles - add your own CSS to this stylesheet -->
+    <link href="style.css" rel="stylesheet">
+  
+	<!--Bootstrap icons-->  
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"> 
+	  
+	  
+    <!--Google Font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Radley:ital@0;1&family=TASA+Orbiter:wght@400..800&display=swap" rel="stylesheet">
+	<!--End Google Font-->
+	
+  </head>
+  <body>
+   
+	  
+	<!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary shadow position-relative">
+  	<div class="container position-relative">
+
+    <!-- Mobile menu -->
+    <div class="mobile d-lg-none">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobile-menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-menu">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+<!--            <li class="nav-item"><a class="nav-link" href="#">Collections</a></li>-->
+            <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+			<li class="nav-item dropdown">
+          		<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Collections</a>
+		  		<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="#">Chairs</a></li>
+					<li><a class="dropdown-item" href="#">Tables</a></li>
+					<li><a class="dropdown-item" href="#">Functional Decor</a></li>
+					<li><a class="dropdown-item" href="#">Storage</a></li>
+					<li><a class="dropdown-item" href="#">Electronic Decor</a></li>
+		  		</ul>
+      		</li>
+            <li class="nav-item"><a class="nav-link" href="#">Classes</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End mobile menu-->
+
+    <!-- Center logo -->
+    <a class="navbar-brand mx-auto position-absolute top-100 start-50 translate-middle" href="#">
+      <img src="newstudiowharfflogo.svg" alt="Logo" class="center-logo">
+    </a>
+
+    <!-- Desktop Menu Links-->
+    <ul class="navbar-nav me-auto d-none d-lg-flex">
+      <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+	  <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+	  <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Collections</a>
+		  <ul class="dropdown-menu">
+			<li><a class="dropdown-item" href="#">Chairs</a></li>
+			<li><a class="dropdown-item" href="#">Tables</a></li>
+			<li><a class="dropdown-item" href="#">Functional Decor</a></li>
+			<li><a class="dropdown-item" href="#">Storage</a></li>
+			<li><a class="dropdown-item" href="#">Electronic Decor</a></li>
+		  </ul>
+      </li>
+		
+<!--      <li class="nav-item"><a class="nav-link" href="#">Collections</a></li>-->
+    </ul>
+
+    <ul class="navbar-nav ms-auto d-none d-lg-flex">
+      <li class="nav-item"><a class="nav-link" href="#">Classes</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+    </ul>  
+
+  </div>
+</nav>
+
+<!-- Banner -->
+<header class="hero">
+  <h1 class="banner-title">Functional Art For the Home</h1>
+  <a href="#collections-preview" class="btn btn-outline-light hero-btn">Collections</a>
+<!--  <button type="button" class="btn btn-outline-light">Collections</button>-->
+</header>
+
+
+	
+<div class= "custom-border gradient-bg">	  
+<!--Collections	-->
+<div id = "collections-preview">
+	<div class= "row">
+		<div class="col-12 d-flex justify-content-center align-items-center">
+			<h2>Collections</h2>
+		</div>
+	</div>
+
+<!-- Hidden Tab Navigation-->	
+<ul class="nav nav-tabs d-none" id="contentTabs" role="tablist">
+  <li class="nav-item">
+    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#pane1"></button>
+  </li>
+  <li class="nav-item">
+    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#pane2"></button>
+  </li>
+</ul>
+
+<!-- Tab (Pane) Content -->
+<div class="container">
+<div class="tab-content">
+
+  <!-- PANE 1 -->
+  <div class="tab-pane fade show active" id="pane1">
+    <div class="row">
+		
+	  <!-- Left Button -->
+	  <div class= "col-md-2 d-none d-md-flex justify-content-start align-items-center">
+		 <button class="btn btn-outline-light back-btn">
+       		 <i class="bi bi-chevron-left big-icon"></i>
+      	 </button>
+	  </div>
+		
+	  <!-- Left Col -->	
+      <div class="col-md-4 d-flex justify-content-end align-items-center tab-left-col">
+		<div class="offset-outline">
+			<div class="img-hover-wrapper img-border">
+				<a href="#">
+					<img src= "grassseat.jpg" class="img-fluid ml-auto" alt="Grass Seat">
+					<div class="img-hover-text">Chairs</div>
+				</a>
+			</div>
+		</div>
+      </div>
+	
+	  <!-- Right Col -->
+	  <div class="col-md-4 d-flex align-items-start flex-column tab-right-col">
+
+		<div class="offset-outline mb-auto">
+			<div class="img-hover-wrapper img-border">
+		  		<a href="#">
+					<img src= "eshericktable.jpg" class="img-fluid ml-auto" alt="esherick table">
+					<div class="img-hover-text">Tables</div>
+				</a>
+			</div>
+		</div>
+					
+
+
+		<div class="offset-outline tab-right-btm-img">
+			<div class="img-hover-wrapper img-border">
+				<a href="#">
+					<img src= "presidentbowls.jpg" class="img-fluid ml-auto" alt="bowls">
+					<div class="img-hover-text">Functional Decor</div>
+				</a>
+			</div>
+		</div>
+		</div>
+		
+	  <!-- Right Button -->
+	  <div class= "col-md-2 d-none d-md-flex justify-content-end align-items-center">
+		 <button class="btn btn-outline-light next-btn">
+            <i class="bi bi-chevron-right big-icon"></i>
+         </button>
+	  </div>
+   </div>
+
+   <!--Mobile Navigation Buttons -->
+   <div class="row d-md-none">
+	  <div class="col-12">
+   		<div class="d-flex justify-content-between mt-4">
+      		<button class="btn btn-outline-light back-btn">
+        		<i class="bi bi-chevron-left"></i> Back
+      		</button>
+
+      		<button class="btn btn-outline-light next-btn">
+       		 	Next <i class="bi bi-chevron-right"></i>
+      		</button>
+   		</div>
+	  </div>
+   </div>
+ </div>
+
+  <!-- PANE 2 -->
+ <div class="tab-pane fade" id="pane2">
+   <div class="row">
+      
+	  <!-- Left Button -->
+	  <div class= "col-md-2 d-none d-md-flex justify-content-start align-items-center">
+		 <button class="btn btn-outline-light back-btn">
+       		 <i class="bi bi-chevron-left big-icon"></i>
+      	 </button>
+	  </div>	  
+		
+	  <!-- Left Col -->	
+      <div class="col-md-4 d-flex justify-content-end align-items-center tab-left-col">
+		<div class="offset-outline">
+			<div class="img-hover-wrapper img-border">
+				<a href="#">
+        			<img src= "stand.jpg" class="img-fluid ml-auto" alt="Stand">
+					<div class="img-hover-text">Storage</div>
+				</a>
+			</div>
+		</div>
+      </div>
+		
+	  <!-- Right Col -->	
+      <div class="col-md-4 d-flex justify-content-start align-items-center tab-right-col">
+		<div class="offset-outline">
+			<div class="img-hover-wrapper img-border">
+				<a href="#">
+        			<img src= "clock.jpg" class="img-fluid ml-auto" alt="Clock">
+					<div class="img-hover-text">Electronic Decor</div>
+				</a>
+			</div>
+		</div>
+      </div>
+		
+	  <!-- Right Button -->
+	  <div class= "col-md-2 d-none d-md-flex justify-content-end align-items-center">
+		 <button class="btn btn-outline-light next-btn">
+            <i class="bi bi-chevron-right big-icon"></i>
+         </button>
+	  </div>
+    </div>
+
+   <!--Mobile Navigation Buttons -->
+   <div class="row d-md-none">
+	  <div class="col-12">
+   		<div class="d-flex justify-content-between mt-4">
+      		<button class="btn btn-outline-light back-btn">
+        		<i class="bi bi-chevron-left"></i> Back
+      		</button>
+
+      		<button class="btn btn-outline-light next-btn">
+       		 	Next <i class="bi bi-chevron-right"></i>
+      		</button>
+   		</div>
+	  </div>
+   </div>
+  </div>
+
+</div>
+</div>
+</div>
+	  </div>
+
+
+<div class= "custom-border gradient-bg"> 
+<div class = "row" id="about">
+	<div class="col-md-5 d-flex justify-content-end">
+		<img src="jeffwharff.jpg" alt="picture of jeff wharff" class="img-fluid ml-auto img-border">
+	</div>
+	<div class="col-md-7" id="about-text">
+		<h2>About Studio Wharff</h2>
+		<p>Studio Wharff is the creative outlet designed by Jeffrey Wharff to share his love of woodworking and hopefully inspire others to appreciate this amazing craft. The pieces featured at Studio Wharff are largely inspired by the Studio Furniture movement which traces it roots to the Scandinavian and Japanese design esthetic. The resulting clean lines and organic nature of these pieces promote a sense of balance and peace within the home. At Studio Wharff thoughtful consideration is given to each piece in terms of function and form. The goal is to produce high quality one-of-kind pieces that inspire future generations. As George Nakashima wrote,if you do something beautiful with a tree it will last forever. At Studio Wharff, each piece starts as a conceptual drawing inspired by the unique figure and character of the lumber. To this end, careful craftsmanship ensures that the wood's beauty becomes a crucial element in the design. The result is "function art" that wants to be used and will be enjoyed for years to come.</p>
+	
+		<div class="accordion accordion-flush" id="about-accordion">
+  		<div class="accordion-item">
+    		<h2 class="accordion-header">
+      			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+       				 Read More
+      			</button>
+    		</h2>
+		    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      			<div class="accordion-body">
+					<p>On a personal note, I have been designing and building furniture for over two decades.However, my interest in woodworking occurred early in my childhood. I was first exposed to woodworking and the elements of good design by my father, an engineer at Pontiac Motors, who loved to design and build everything from backyard barns to a 12-foot model airplane for his sons to enjoy in their home’s basement. I was always fascinated with my father’s ability at the drafting table to layout our next project in such exacting detail that brought each project to life and stirred my imagination. High school woodworking classes further piqued my interest.</p>
+
+					<p>However, my real interest in woodworking had to wait until after college. Moving to Washington DC, I pursued a PhD in economics from the American University. From there, I went to work at one of the county’s top anti-trust law firms before turning my attention to public service and began teaching economics and working for the Executive Branch of the Federal Government.</p>
+
+					<p>My reintroduction to woodworking came after the birth of our first child. I wanted to build him a crib of curly maple that could be passed down to future generations. It was then I began to appreciate the personal value that hand-made furniture offered over mass-produced items. I have always been moved by a Frank Lloyd Write quote  I believe a house is more a home by being a work of art. I believe that this idea also translates into the furniture and crafts that are brought into our homes.</p>
+
+					<p>I am largely a self-taught woodworker learning through experience and the support of many talented woodworking artists around the country. As a woodworker, my goal is to bring nature's beauty into the home. As an educator,it is my hope to share what I have learned to the next generation.</p>
+				</div>
+   			</div>
+		</div>
+	 	</div>
+	</div>
+	
+	
+	
+	
+	
+</div>	  
+</div> 	  
+	  
+	  
+<!-- Footer	  -->
+ <footer class="p-2 bg-secondary">
+     <div class="container text-center">
+		<i class="bi bi-instagram"></i> <i class="bi bi-facebook"></i>
+		<p class="copyright-text p-1">Copyright &copy; 2025 Studio Wharff</p>
+	 </div>
+ </footer>	  
+	  
+	  
+	  
+	  
+	  
+	  
+
+
+<!-- LOAD BOOTSTRAP 5.3.7 JAVASCRIPT - DO NOT DELETE -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<!-- END LOADING BOOTSTRAP JAVASCRIPT -->
+   
+<!--Java Script for Panes-->
+<script>
+function goToNextPane() {
+  const tabs = document.querySelectorAll("#contentTabs .nav-link");
+  const active = document.querySelector("#contentTabs .nav-link.active");
+  const currentIndex = [...tabs].indexOf(active);
+
+  if (currentIndex === tabs.length - 1) {
+    tabs[0].click();
+    return;
+  }
+
+  tabs[currentIndex + 1].click();
+}
+
+function goToPrevPane() {
+  const tabs = document.querySelectorAll("#contentTabs .nav-link");
+  const active = document.querySelector("#contentTabs .nav-link.active");
+  const currentIndex = [...tabs].indexOf(active);
+
+  if (currentIndex === 0) {
+    tabs[tabs.length - 1].click();
+    return;
+  }
+
+  tabs[currentIndex - 1].click();
+}
+
+document.querySelectorAll(".next-btn").forEach(btn => {
+  btn.addEventListener("click", goToNextPane);
+});
+
+document.querySelectorAll(".back-btn").forEach(btn => {
+  btn.addEventListener("click", goToPrevPane);
+});
+</script>
+	  	  
+	  
+	  
+  </body>
+</html>
